@@ -64,7 +64,11 @@ public class Cont {
     }
 
     public int retragere(int retragere){
+        if (retragere < sold){
         sold -= retragere;
+        }else {
+            System.out.println("You don't have enough money");
+        }
 
         return sold;
     }
